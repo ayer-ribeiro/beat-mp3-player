@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Beat Player</string>
+    <string name="songs_library_title">Songs</string>
+    <string name="albums_library_title">Albums</string>
+    <string name="artists_library_title">Artists</string>
+    <string name="settings_title">Settings</string>
+
+    <string name="settings_color_green_theme_name">Green</string>
+    <string name="settings_color_blue_theme_name">Blue</string>
+    <string name="settings_color_orange_theme_name">Orange</string>
+    <string name="settings_color_pink_theme_name">Pink</string>
+    <string name="settings_color_purple_theme_name">Purple</string>
+
+    <string name="unknown_song">Unknown Song</string>
+    <string name="unknown_artist">Unknown Artist</string>
+
+    <string name="overflow_add_to_next_in_queue">Add to next in queue</string>
+    <string name="overflow_add_to_end_of_queue">Add to end in queue</string>
+    <string name="overflow_play">Play</string>
+    <string name="overflow_remove_from_queue">Remove from queue</string>
+</resources>

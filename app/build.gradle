@@ -1,0 +1,90 @@
+plugins {
+    alias libs.plugins.android.application
+    alias libs.plugins.kotlin.gradle.plugin
+}
+
+def packageName = "dev.ayer.dmusic"
+def moduleVersionCode = 6
+def moduleVersionName = "1.0.4"
+
+android {
+    compileSdk = libs.versions.compileSdk.get().toInteger()
+    buildToolsVersion = libs.versions.buildTools.get()
+    namespace = packageName
+
+    defaultConfig {
+        applicationId packageName
+        minSdk = libs.versions.minSdk.get().toInteger()
+        targetSdk = libs.versions.targetSdk.get().toInteger()
+        versionCode = moduleVersionCode
+        versionName = moduleVersionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            def mapsKeyFile = project.rootProject.file("local.properties")
+            def properties = new Properties()
+            properties.load(mapsKeyFile.newInputStream())
+
+            def releaseKeyStorePath = properties.getProperty("releaseKeyStorePath").toString() ?: ""
+            def releaseKeyStorePassword = properties.getProperty("releaseKeyStorePassword").toString() ?: ""
+            def releaseKeyAlias = properties.getProperty("releaseKeyAlias").toString() ?: ""
+            def releaseKeyPassword = properties.getProperty("releaseKeyPassword").toString() ?: ""
+
+            storeFile file(releaseKeyStorePath)
+            storePassword releaseKeyStorePassword
+            keyAlias releaseKeyAlias
+            keyPassword releaseKeyPassword
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+
+    implementation project(':medialibrary')
+    implementation project(':audioplayer')
+    implementation project(':nativetemplates')
+
+    implementation libs.kotlin.stdlib
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+
+    implementation libs.google.material
+    implementation libs.google.gms.ads
+
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.recyclerview
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+
+    implementation libs.glide
+    implementation libs.glide.transformations
+    annotationProcessor libs.glide.compiler
+
+    testImplementation libs.junit
+    testImplementation libs.androidx.arch.testing
+    testImplementation libs.kotlinx.coroutines.test
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.inline
+
+    androidTestImplementation libs.androix.test.ext.junit
+    androidTestImplementation libs.androix.test.espresso
+}

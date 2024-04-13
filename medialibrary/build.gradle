@@ -1,0 +1,50 @@
+plugins {
+    alias libs.plugins.android.library
+    alias libs.plugins.kotlin.gradle.plugin
+}
+
+android {
+    compileSdk = libs.versions.compileSdk.get().toInteger()
+    namespace = "dev.ayer.medialibrary"
+
+    defaultConfig {
+        minSdk = libs.versions.minSdk.get().toInteger()
+        targetSdk = libs.versions.targetSdk.get().toInteger()
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.google.material
+
+    testImplementation libs.junit
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.inline
+
+    androidTestImplementation libs.androix.test.ext.junit
+    androidTestImplementation libs.androix.test.espresso
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/play"
+        android:title="@string/overflow_play"/>
+    <item
+        android:id="@+id/add_to_next_in_queue"
+        android:title="@string/overflow_add_to_next_in_queue" />
+    <item
+        android:id="@+id/add_to_end_queue"
+        android:title="@string/overflow_add_to_end_of_queue" />
+</menu>

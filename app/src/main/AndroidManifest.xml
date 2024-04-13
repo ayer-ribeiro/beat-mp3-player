@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+    <application
+        android:name="dev.ayer.dmusic.PlayerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlayerCustomizável">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8605532518832961~7609590228"/>
+        <activity
+            android:name="dev.ayer.dmusic.presenter.player.PlayerActivity"
+            android:label=""
+            android:exported="false" />
+        <activity
+            android:name="dev.ayer.dmusic.presenter.album.AlbumActivity"
+            android:label=""
+            android:exported="false"/>
+        <activity
+            android:name="dev.ayer.dmusic.presenter.artist.ArtistActivity"
+            android:exported="false"
+            android:label="" />
+        <activity
+            android:name="dev.ayer.dmusic.presenter.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title" />
+        <activity
+            android:name="dev.ayer.dmusic.presenter.library.songs.LibrarySongsActivity"
+            android:exported="false"
+            android:label="@string/songs_library_title" />
+        <activity
+            android:name="dev.ayer.dmusic.presenter.library.artists.LibraryArtistsActivity"
+            android:exported="false"
+            android:label="@string/artists_library_title" />
+        <activity
+            android:name="dev.ayer.dmusic.presenter.library.albums.LibraryAlbumsActivity"
+            android:exported="false"
+            android:label="@string/albums_library_title" />
+        <activity android:name="dev.ayer.dmusic.presenter.library.home.LibraryHomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

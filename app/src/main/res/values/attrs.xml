@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorSecondaryLight" format="color" />
+
+    <declare-styleable name="BigMiniPlayerView">
+        <attr name="buttonColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="thumbColor" format="color" />
+        <attr name="activatedButtonColor" format="color" />
+        <attr name="spaceCenter" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MiniPlayerView">
+        <attr name="accentColor" format="color" />
+    </declare-styleable>
+</resources>

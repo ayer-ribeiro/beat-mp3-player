@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+    <style name="Theme.PlayerCustomizável" parent="Theme.MaterialComponents.DayNight.NoActionBar.SplashScreen">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_primary_white</item>
+        <item name="colorPrimaryVariant">@color/app_primary_white_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_green_secondary</item>
+        <item name="colorSecondaryLight">@color/app_green_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_green_secondary_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="colorSurface">@color/grey_50</item>
+        <item name="colorOnSurface">@color/grey_900</item>
+        <item name="android:textColorPrimary">@color/grey_800</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+        <item name="colorControlNormal">@color/grey_700</item>
+        <item name="colorControlActivated">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Green" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_green_secondary</item>
+        <item name="colorSecondaryLight">@color/app_green_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_green_secondary_dark</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Blue" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_blue_secondary</item>
+        <item name="colorSecondaryLight">@color/app_blue_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_blue_secondary_dark</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Orange" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_orange_secondary</item>
+        <item name="colorSecondaryLight">@color/app_orange_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_orange_secondary_dark</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Pink" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_pink_secondary</item>
+        <item name="colorSecondaryLight">@color/app_pink_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_pink_secondary_dark</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Purple" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_purple_secondary</item>
+        <item name="colorSecondaryLight">@color/app_purple_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_purple_secondary_dark</item>
+    </style>
+
+    <style name="Theme.PlayerCustomizável.Black" parent="Theme.PlayerCustomizável">
+        <item name="colorSecondary">@color/app_black_secondary</item>
+        <item name="colorSecondaryLight">@color/app_black_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_black_secondary_dark</item>
+    </style>
+
+</resources>

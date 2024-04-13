@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_primary_white">#FAFAFA</color>
+    <color name="app_primary_white_light">#ffffff</color>
+    <color name="app_primary_white_dark">#c7c7c7</color>
+
+    <color name="app_primary_black">#212121</color>
+    <color name="app_primary_black_light">#484848</color>
+    <color name="app_primary_black_dark">#000000</color>
+
+    <color name="app_black_secondary">#263238</color>
+    <color name="app_black_secondary_light">#4f5b62</color>
+    <color name="app_black_secondary_dark">#000a12</color>
+
+    <color name="app_green_secondary">#4caf50</color>
+    <color name="app_green_secondary_light">#80e27e</color>
+    <color name="app_green_secondary_dark">#087f23</color>
+
+    <color name="app_blue_secondary">#02A9F4</color>
+    <color name="app_blue_secondary_light">#67DAFF</color>
+    <color name="app_blue_secondary_dark">#007AC1</color>
+
+    <color name="app_orange_secondary">#FF6F00</color>
+    <color name="app_orange_secondary_light">#FFA040</color>
+    <color name="app_orange_secondary_dark">#C43E00</color>
+
+    <color name="app_pink_secondary">#EC407A</color>
+    <color name="app_pink_secondary_light">#FF77A9</color>
+    <color name="app_pink_secondary_dark">#B4004E</color>
+
+    <color name="app_purple_secondary">#9c27b0</color>
+    <color name="app_purple_secondary_light">#d05ce3</color>
+    <color name="app_purple_secondary_dark">#6a0080</color>
+
+    <color name="app_primary_text">#ffffff</color>
+    <color name="app_secondary_text">#000000</color>
+
+    <color name="grey_50">#FFFAFAFA</color>
+    <color name="grey_100">#FFF5F5F5</color>
+    <color name="grey_200">#FFEEEEEE</color>
+    <color name="grey_300">#FFE0E0E0</color>
+    <color name="grey_400">#FFBDBDBD</color>
+    <color name="grey_500">#FFBDBDBD</color>
+    <color name="grey_600">#FF757575</color>
+    <color name="grey_700">#FF616161</color>
+    <color name="grey_800">#FF424242</color>
+    <color name="grey_900">#FF212121</color>
+
+    <color name="background_color">#FFFFFFFF</color>
+    <color name="secondary_background_color">#FAFAFA</color>
+
+    <color name="icon_primary_color">#212121</color>
+    <color name="icon_secondary_color">#626262</color>
+</resources>

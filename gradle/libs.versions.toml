@@ -1,0 +1,75 @@
+[versions]
+# SDK
+compileSdk = "33"
+targetSdk = "33"
+minSdk = "21"
+buildTools = "34.0.0"
+
+kotlin = "1.9.21"
+android-gradle-plugin = "8.2.0"
+
+androidx-core = "1.9.0"
+androidx-appcompat = "1.4.1"
+androidx-constraintlayout = "2.1.3"
+androidx-recyclerview = "1.2.1"
+androidx-lifecycle = "2.4.0"
+androidx-media = "1.4.3"
+
+glide = "4.12.0"
+glide-transformations = "4.0.0"
+
+google-material = "1.5.0"
+google-gms-play-services-ads = "20.5.0"
+google-exoplayer = "r2.2.0"
+
+junit = "4.13.2"
+androidx-arch-testing = "2.1.0"
+kotlinx-coroutines = "1.5.0"
+mockito-kotlin = "4.0.0"
+mockito = "4.2.0"
+androix-test-ext-junit = "1.1.3"
+androix-test-espresso = "3.4.0"
+
+[plugins]
+# AGP
+android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+
+#Kotlin
+kotlin-gradle-plugin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidx-core" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidx-appcompat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidx-constraintlayout" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "androidx-recyclerview" }
+androidx-media = { group = "androidx.media", name = "media", version.ref = "androidx-media" }
+
+androidx-lifecycle-service = { group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-commom-java8 = { group = "androidx.lifecycle", name = "lifecycle-common-java8", version.ref = "androidx-lifecycle"}
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidx-lifecycle" }
+
+google-material = { group = "com.google.android.material", name = "material", version.ref = "google-material" }
+google-gms-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "google-gms-play-services-ads" }
+google-exoplayer = { group = "com.google.android.exoplayer", name = "exoplayer", version.ref = "google-exoplayer"}
+
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+glide-transformations = { group = "jp.wasabeef", name = "glide-transformations", version.ref = "glide-transformations" }
+
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockito-kotlin" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+
+androidx-arch-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidx-arch-testing" }
+androix-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androix-test-ext-junit" }
+androix-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androix-test-espresso" }
