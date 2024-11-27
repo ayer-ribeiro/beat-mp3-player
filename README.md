@@ -1,5 +1,7 @@
 # Beat Music Player
 
+Project created at 2022 to practice media player skills.
+
 <img width="288" alt="" src="https://github.com/ayer-ribeiro/d-music-mp3-player/assets/24896635/f4891223-587f-4db4-a772-18cbdc4e6ad1">
 
 With Beat, you are the protagonist of your music experience
